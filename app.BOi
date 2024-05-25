@@ -1,0 +1,18 @@
+switch (choice) {
+                case 1:
+                    startApplication();
+                    break;
+                case 2:
+                    showSettings();
+                    break;
+                case 3:
+                    showHelp();
+                    break;
+                case 4:
+                    System.out.println("Exiting...");
+                    scanner.close();
+                    System.exit(0);
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please select a valid option.");
+            }
