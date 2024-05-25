@@ -1,3 +1,14 @@
+public void displayMenu() {
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            System.out.println("==== Boot Menu ====");
+            System.out.println("1. Start Application");
+            System.out.println("2. Settings");
+            System.out.println("3. Help");
+            System.out.println("4. Exit");
+            System.out.print("Select an option: ");
+
+            int choice = scanner.nextInt();
 switch (choice) {
                 case 1:
                     startApplication();
@@ -16,3 +27,4 @@ switch (choice) {
                 default:
                     System.out.println("Invalid choice. Please select a valid option.");
             }
+}
